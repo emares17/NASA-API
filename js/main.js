@@ -10,7 +10,8 @@ fetch("https://api.nasa.gov/planetary/apod?&api_key=" + apiKey)
         .then(data => {
             console.log(data)
             document.querySelector('img').src = data.url
-            document.querySelector('h3').innerText = `Description: ${data.explanation}`
+            document.querySelector('.title').innerText = data.title
+            document.querySelector('.description').innerText = data.explanation
     
         })
 
@@ -27,7 +28,8 @@ function getDate() {
         .then(data => {
             console.log(data)
             document.querySelector('img').src = data.url
-            document.querySelector('h3').innerText = `Description: ${data.explanation}`
+            document.querySelector('.title').innerText = data.title
+            document.querySelector('.description').innerText = data.explanation
     
         })
         .catch(err => {

@@ -10,11 +10,82 @@
 /******************************************
 /* LAYOUT
 /*******************************************/
+body {
+  background-image: url('/images/bg.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+h1 {
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+  font-size: 5rem;
+  margin: 5rem 0 0 10rem;
+  text-align: left;
+  display: inline-block;
+  width: 65%;
+  letter-spacing: 6px;
+}
+.containerOne {
+  display: flex;
+  margin: .5rem 0;
+}
+.containerOne input {
+  margin: 0 0 0 10rem;
+  width: 18rem;
+  height: 1.8rem;
+  border-radius: .3rem;
+  border-right: none;
+  outline: none;
+  resize: none;
+}
+.containerOne button {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  height: 1.8rem;
+  width: 8.3rem;
+  background: linear-gradient( 99.9deg, rgb(30, 28, 32) 21.2%, rgb(2, 0, 143) 84.8% );;
+  cursor: pointer;
+  border-radius: .3rem;
+  border-left: none;
+  margin-left: -0.15rem;
+}
 img{
   display: block;
-  margin: 0 auto;
+  height: 500px;
+  border: solid 2px white;
 }
-
+h2 {
+  font-family: 'Bebas Neue', cursive;  
+  margin: 1rem 0 0 10rem;
+  font-size: 3rem;
+  color: white;
+  height: 3.8rem;
+  letter-spacing: 3px;
+}
+.containerTwo {
+  margin: 0 0 0 10rem;
+  display: flex;
+}
+.descSection {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.title {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3rem;
+  margin: 1rem 0 0 0;
+  letter-spacing: 3px;
+}
+.description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  margin: 2rem 0 0 0;
+  padding: 0 5rem;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
 
 /******************************************
 /* ADDITIONAL STYLES

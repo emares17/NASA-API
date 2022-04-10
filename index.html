@@ -4,8 +4,10 @@
     	<meta charset="utf-8">
     	<meta name="description" content="This is where your description goes">
     	<meta name="keywords" content="one, two, three">
-
-		<title>Title in the tab</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+		<title>NASA APOD</title>
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
@@ -13,13 +15,21 @@
 	</head>
 	<body>
 
-		<h1>Which date?</h1>
-		<input type="text" name="" value="">
-		<button type="button" name="button">Get Picture </button>
-
-		<h2>Name</h2>
-		<img src="" alt="">
-		<h3>Description</h3>
+		<h1>NASA Astronomy Picture of the Day.
+			Select a date after 1995-06-16.
+		</h1>
+		<div class="containerOne">
+			<input type="text" placeholder="yyyy-mm-dd" name="" value="">
+			<button type="button" name="button">Get Picture </button>	
+		</div>
+			<h2>Picture of the Day.</h2>	
+		<div class="containerTwo">
+			<img src="" alt="">
+			<section class="descSection">
+				<h3 class="title">title</h3>
+				<h3 class="description">description</h3>
+			</section>
+		</div>
 
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
